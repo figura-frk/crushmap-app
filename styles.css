@@ -263,13 +263,20 @@ p {
 
 .oval-note {
   position: relative;
-  margin: 1.8rem auto 0;
+  margin: 2.4rem auto 0;
   max-width: 620px;
-  padding: 1.4rem 2rem;
+  padding: 3.4rem 3.5rem;
   border-radius: 100%;
   border: 1px solid;
-  border-color: var(--gradient)
+  border-color: var(--gradient);
+  transform: rotate(-5deg);
 }
+
+.oval-note p {
+  transform: rotate(+5deg);
+ 
+}
+
 
 /* .oval-note::before {
   content: "";
@@ -302,7 +309,8 @@ p {
   font-size: 2.25rem;
   color: #171717;
 }
-.star:first-child { left: 0.55rem; }
+.star:first-child { left: 0.55rem;
+top: 29%; }
 .star:last-child { right: 0.65rem; }
 
 .card-grid {
@@ -324,13 +332,19 @@ p {
   padding: 1.4rem 1.1rem 1.2rem;
 }
 
-.feature-card {
+.feature-card  {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.card-illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .card-illustration,
