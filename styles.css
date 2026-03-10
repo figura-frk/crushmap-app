@@ -120,37 +120,6 @@ a {
   font-size: 0.95rem;
 }
 
-/* .nav-menu a:hover {
-  color: #1f1f26;
-}
-
-.nav-toggle {
-  display: none;
-  width: 46px;
-  height: 46px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.55);
-  cursor: pointer;
-  padding: 0;
-}
-
-.nav-toggle span {
-  display: block;
-  width: 18px;
-  height: 2px;
-  margin: 4px auto;
-  background: #444;
-  border-radius: 999px;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  align-items: center;
-  gap: 3rem;
-  min-height: calc(100vh - 78px);
-} */
 
 .eyebrow {
   display: inline-flex;
@@ -174,7 +143,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  letter-spacing: -0.04em;
+  letter-spacing: 0em;
 }
 
 h1 {
@@ -290,24 +259,29 @@ p {
 .mint { background: #53d3a1; }
 .pearl { background: #fbf5ef; }
 
+
+
 .oval-note {
   position: relative;
   margin: 1.8rem auto 0;
   max-width: 620px;
   padding: 1.4rem 2rem;
   border-radius: 100%;
+  border: 1px solid;
+  border-color: var(--gradient)
 }
 
-.oval-note::before {
+/* .oval-note::before {
   content: "";
   position: absolute;
   inset: 0;
-  border: 1.5px solid rgba(80, 80, 110, 0.35);
+  border: 2px solid;
+  border-color: var(--gradient);
   border-radius: 999px;
-  transform: rotate(-5deg);
-}
+  /* transform: rotate(-5deg); */
 
-.oval-note p {
+
+/* .oval-note p {
   margin: 0;
   position: relative;
   z-index: 1;
@@ -317,12 +291,19 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.25rem;
+  font-size: 2.25rem;
+  color: #171717;
+} */ 
+
+.star {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 2.25rem;
   color: #171717;
 }
-
-.star:first-child { left: 0.2rem; }
-.star:last-child { right: 0.3rem; }
+.star:first-child { left: 0.55rem; }
+.star:last-child { right: 0.65rem; }
 
 .card-grid {
   display: grid;
@@ -349,6 +330,8 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+
 
 .card-illustration,
 .feature-icon {
@@ -391,6 +374,7 @@ p {
 }
 
 .pill-check {
+font-size: 20px;
   flex: 0 0 auto;
   width: 34px;
   height: 34px;
@@ -481,6 +465,17 @@ p {
   .feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  width: 10%;
 }
 
 @media (max-width: 767px) {
